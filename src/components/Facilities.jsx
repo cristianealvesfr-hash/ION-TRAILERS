@@ -27,13 +27,26 @@ const Facilities = () => {
     "/images/food_truck_red_4.jpg"
   ];
 
+  const trailerLojas = [
+    "/images/trailer_loja_1.jpg",
+    "/images/trailer_loja_2.jpg",
+    "/images/trailer_loja_3.jpg"
+  ];
+
   const [currentFT, setCurrentFT] = React.useState(0);
+  const [currentTL, setCurrentTL] = React.useState(0);
   
   React.useEffect(() => {
-    const timer = setInterval(() => {
+    const timerFT = setInterval(() => {
       setCurrentFT((prev) => (prev === foodTrucks.length - 1 ? 0 : prev + 1));
     }, 4000);
-    return () => clearInterval(timer);
+    const timerTL = setInterval(() => {
+      setCurrentTL((prev) => (prev === trailerLojas.length - 1 ? 0 : prev + 1));
+    }, 4500); // slightly different interval so they don't slide exactly at the same time
+    return () => {
+      clearInterval(timerFT);
+      clearInterval(timerTL);
+    };
   }, []);
 
   return (
@@ -135,6 +148,52 @@ const Facilities = () => {
                   key={idx}
                   onClick={() => setCurrentFT(idx)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${currentFT === idx ? 'bg-ion-bronze w-8' : 'bg-white/50 hover:bg-white'}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Trailer Lojas Carousel Category */}
+        <div className="mt-24 border-t border-gray-100 pt-24">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <motion.h3 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-black text-ion-dark mb-4"
+            >
+              Trailer <span className="text-ion-bronze">Lojas</span> / Vitrines Móveis
+            </motion.h3>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-gray-600 text-lg md:text-xl font-medium"
+            >
+              Soluções sofisticadas de mobilidade comercial. Leve sua marca e produtos para eventos, exposições e pontos estratégicos com máximo impacto visual.
+            </motion.p>
+          </div>
+
+          <div className="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl relative">
+            <motion.img 
+              key={`tl-${currentTL}`}
+              src={trailerLojas[currentTL]}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="w-full h-full object-cover"
+              alt="Trailer Loja Íon Trailers"
+            />
+            
+            {/* Overlay indicators */}
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3 z-20">
+              {trailerLojas.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentTL(idx)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${currentTL === idx ? 'bg-ion-bronze w-8' : 'bg-white/50 hover:bg-white'}`}
                 />
               ))}
             </div>

@@ -30,6 +30,13 @@ const slides = [
     subtitle: "2026",
     category: "Reboques",
     image: "/images/reboque_teardrop.jpg",
+  },
+  {
+    id: 5,
+    title: "ÍON TRAILERS",
+    subtitle: "2026",
+    category: "Trailer Lojas",
+    image: "/images/trailer_loja_1.jpg",
   }
 ];
 
