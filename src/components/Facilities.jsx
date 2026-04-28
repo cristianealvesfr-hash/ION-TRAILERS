@@ -10,13 +10,13 @@ const Facilities = () => {
       title: "Matriz",
       highlight: "Santa Catarina",
       address: "Rodovia SC-418, 12000 KM50 Íon Trailer Campestre, Campo Alegre - SC",
-      image: "/images/fabrica_trailers.jpg"
+      image: "/images/fac_1.jpg"
     },
     {
       title: "Filial",
       highlight: "São Paulo",
       address: "Venda, Manutenção e Camping | Estr. Da Glória, 1.100 - Três Vendas",
-      image: "/images/trailer_camping_novo.jpg"
+      image: "/images/fac_2.jpg"
     }
   ];
 
