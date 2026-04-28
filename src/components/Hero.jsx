@@ -7,36 +7,36 @@ const slides = [
     id: 1,
     title: "ÍON TRAILERS",
     subtitle: "Referência em fabricação de Trailers no Brasil!",
+    category: "Trailer Lojas",
+    image: "/images/trailer_loja_1.jpg",
+  },
+  {
+    id: 2,
+    title: "ÍON TRAILERS",
+    subtitle: "Referência em fabricação de Trailers no Brasil!",
     category: "Fábrica trailer de lanches",
     image: "/images/food_truck_red_1.jpg",
   },
   {
-    id: 2,
+    id: 3,
     title: "ÍON TRAILERS",
     subtitle: "Referência em fabricação de Trailers no Brasil!",
     category: "Trailers de Camping",
     image: "/images/trailer_camping_1.jpg",
   },
   {
-    id: 3,
+    id: 4,
     title: "ÍON TRAILERS",
     subtitle: "Referência em fabricação de Trailers no Brasil!",
     category: "Motorhomes",
     image: "/images/motorhome_premium.jpg",
   },
   {
-    id: 4,
+    id: 5,
     title: "ÍON TRAILERS",
     subtitle: "Referência em fabricação de Trailers no Brasil!",
     category: "Reboques",
     image: "/images/reboque_teardrop.jpg",
-  },
-  {
-    id: 5,
-    title: "ÍON TRAILERS",
-    subtitle: "Referência em fabricação de Trailers no Brasil!",
-    category: "Trailer Lojas",
-    image: "/images/trailer_loja_1.jpg",
   }
 ];
 
