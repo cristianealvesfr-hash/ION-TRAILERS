@@ -120,7 +120,7 @@ const Facilities = () => {
         </div>
 
         {/* Food Trucks Carousel Category */}
-        <div className="mt-32 border-t border-gray-100 pt-24">
+        <div className="mt-16 md:mt-32 border-t border-gray-100 pt-12 md:pt-24">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <motion.h3 
               initial={{ opacity: 0, y: 20 }}
@@ -166,7 +166,7 @@ const Facilities = () => {
         </div>
 
         {/* Trailer Lojas Carousel Category */}
-        <div className="mt-24 border-t border-gray-100 pt-24">
+        <div className="mt-12 md:mt-24 border-t border-gray-100 pt-12 md:pt-24">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <motion.h3 
               initial={{ opacity: 0, y: 20 }}
@@ -212,7 +212,7 @@ const Facilities = () => {
         </div>
 
         {/* Trailers de Camping Carousel Category */}
-        <div className="mt-24 border-t border-gray-100 pt-24 mb-16">
+        <div className="mt-12 md:mt-24 border-t border-gray-100 pt-12 md:pt-24 mb-8 md:mb-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <motion.h3 
               initial={{ opacity: 0, y: 20 }}
