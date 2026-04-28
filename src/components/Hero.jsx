@@ -111,7 +111,7 @@ const Hero = () => {
                     TRAILERS
                   </span>
                 </h1>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2 w-full max-w-full break-words whitespace-normal pr-4">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-ion-bronze leading-snug mt-2 w-full max-w-[300px] sm:max-w-full break-words pr-2">
                   {slides[currentSlide].subtitle}
                 </h2>
                 
@@ -123,11 +123,11 @@ const Hero = () => {
                   Fabricamos trailers personalizados para o seu tipo de negócio. Há mais de 10 anos fabricando Trailers e Motorhomes, que rodam pelas estradas do mundo inteiro!
                 </p>
                 
-                <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start w-full">
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-[280px] sm:w-auto bg-ion-bronze hover:bg-white text-ion-dark font-bold py-2 px-2 sm:px-6 rounded uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-xl text-center text-[11px] sm:text-sm">
+                <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex-1 bg-ion-bronze hover:bg-white text-ion-dark font-bold py-3 sm:py-2 px-4 sm:px-6 rounded uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-xl text-center text-[12px] sm:text-sm">
                     Solicitar Orçamento
                   </a>
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-[280px] sm:w-auto border-2 border-ion-dark text-ion-dark hover:bg-ion-dark hover:text-white font-bold py-2 px-2 sm:px-6 rounded uppercase tracking-wider transition-all duration-300 text-center text-[11px] sm:text-sm">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex-1 border-2 border-ion-dark text-ion-dark hover:bg-ion-dark hover:text-white font-bold py-3 sm:py-2 px-4 sm:px-6 rounded uppercase tracking-wider transition-all duration-300 text-center text-[12px] sm:text-sm">
                     Detalhes
                   </a>
                 </div>
@@ -136,7 +136,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image Content (Carousel) */}
-          <div className="relative aspect-video sm:h-[400px] md:h-[500px] w-[92%] sm:w-full mx-auto flex justify-center items-center z-20 mt-8 md:mt-0">
+          <div className="relative aspect-video sm:h-[400px] md:h-[500px] w-full flex justify-center items-center z-20 mt-8 md:mt-0 px-2 sm:px-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
