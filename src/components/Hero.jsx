@@ -103,15 +103,15 @@ const Hero = () => {
                 transition={{ duration: 0.5 }}
                 className="flex flex-col"
               >
-                <h1 className="flex flex-col mt-4">
-                  <span className="text-6xl md:text-7xl lg:text-8xl font-black text-ion-dark leading-none tracking-tighter">
+                <h1 className="flex flex-col mt-2 md:mt-4">
+                  <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-ion-dark leading-none tracking-tighter">
                     ÍON
                   </span>
-                  <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-ion-dark/80 uppercase leading-none tracking-[0.2em] mt-1">
+                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-ion-dark/80 uppercase leading-none tracking-[0.15em] sm:tracking-[0.2em] mt-1">
                     TRAILERS
                   </span>
                 </h1>
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2 w-full break-words whitespace-normal pr-4">
                   {slides[currentSlide].subtitle}
                 </h2>
                 
@@ -119,7 +119,7 @@ const Hero = () => {
                   {slides[currentSlide].category}
                 </h3>
 
-                <p className="mt-4 text-gray-700 text-base md:text-lg max-w-lg leading-relaxed">
+                <p className="mt-3 text-gray-700 text-sm sm:text-base md:text-lg max-w-lg leading-relaxed pr-4">
                   Fabricamos trailers personalizados para o seu tipo de negócio. Há mais de 10 anos fabricando Trailers e Motorhomes, que rodam pelas estradas do mundo inteiro!
                 </p>
                 
