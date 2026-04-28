@@ -79,13 +79,13 @@ const Hero = () => {
         {/* Diagonal shape - Desktop only */}
         <div 
           className="absolute inset-0 bg-ion-dark w-full h-full hidden md:block"
-          style={{ clipPath: 'polygon(45% 0, 100% 0, 100% 100%, 25% 100%)' }}
+          style={{ clipPath: 'polygon(55% 0, 100% 0, 100% 100%, 45% 100%)' }}
         ></div>
         
         {/* Subtle texture/gradient over the dark area - Desktop only */}
         <div 
           className="absolute inset-0 opacity-20 bg-gradient-to-tr from-ion-bronze to-transparent hidden md:block"
-          style={{ clipPath: 'polygon(45% 0, 100% 0, 100% 100%, 25% 100%)' }}
+          style={{ clipPath: 'polygon(55% 0, 100% 0, 100% 100%, 45% 100%)' }}
         ></div>
       </div>
 
@@ -104,7 +104,7 @@ const Hero = () => {
                 className="flex flex-col"
               >
                 <h1 className="flex flex-col mt-2 md:mt-4">
-                  <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-ion-dark leading-none tracking-tighter">
+                  <span className="text-5xl sm:text-6xl md:text-7xl font-black text-ion-dark leading-none tracking-tighter">
                     ÍON
                   </span>
                   <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-ion-dark/80 uppercase leading-none tracking-widest sm:tracking-[0.2em] mt-1 max-w-full overflow-hidden text-ellipsis">

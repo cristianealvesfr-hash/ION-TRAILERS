@@ -4,9 +4,9 @@ const TopBar = () => {
   return (
     <div className="bg-ion-dark text-white text-sm py-2">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-3 md:gap-0">
-        <div className="flex flex-col sm:flex-row items-center gap-2">
-          <span className="font-semibold tracking-wide">VAMOS CONVERSAR SOBRE SEU PRÓXIMO TRAILER?</span>
-          <a href="https://api.whatsapp.com/send?phone=5551982868640&text=Ol%C3%A1%2C%20estou%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" className="bg-ion-bronze hover:bg-ion-bronze-light text-ion-dark font-bold py-1.5 px-4 rounded text-xs transition-colors duration-300">
+        <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 w-full md:w-auto text-center md:text-left justify-center md:justify-start">
+          <span className="font-semibold tracking-wide text-[10px] sm:text-xs md:text-sm">VAMOS CONVERSAR SOBRE SEU PRÓXIMO TRAILER?</span>
+          <a href="https://api.whatsapp.com/send?phone=5551982868640&text=Ol%C3%A1%2C%20estou%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" className="bg-ion-bronze hover:bg-ion-bronze-light text-ion-dark font-bold py-1 px-3 sm:py-1.5 sm:px-4 rounded text-[10px] sm:text-xs transition-colors duration-300">
             Clique aqui
           </a>
         </div>
