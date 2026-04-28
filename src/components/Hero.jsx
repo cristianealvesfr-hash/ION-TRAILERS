@@ -107,11 +107,11 @@ const Hero = () => {
                   <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-ion-dark leading-none tracking-tighter">
                     ÍON
                   </span>
-                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-ion-dark/80 uppercase leading-none tracking-[0.15em] sm:tracking-[0.2em] mt-1">
+                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-ion-dark/80 uppercase leading-none tracking-widest sm:tracking-[0.2em] mt-1 max-w-full overflow-hidden text-ellipsis">
                     TRAILERS
                   </span>
                 </h1>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2 w-full break-words whitespace-normal pr-4">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2 w-full max-w-full break-words whitespace-normal pr-4">
                   {slides[currentSlide].subtitle}
                 </h2>
                 
