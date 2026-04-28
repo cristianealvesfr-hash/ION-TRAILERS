@@ -3,9 +3,28 @@ import { MapPin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5551982868640&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento.";
+
   return (
-    <footer className="bg-gray-50 pt-16 pb-8 border-t border-gray-200">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-50 border-t border-gray-200 flex flex-col">
+      {/* Bottom CTA Banner */}
+      <div className="bg-ion-dark text-white py-10 w-full">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center tracking-wide uppercase">
+            Vamos conversar sobre seu próximo trailer?
+          </h2>
+          <a 
+            href={whatsappLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-ion-bronze hover:bg-white text-ion-dark hover:text-ion-bronze font-bold py-3 px-10 rounded-md uppercase tracking-wider transition-colors duration-300 shadow-xl text-sm md:text-base whitespace-nowrap"
+          >
+            Clique aqui
+          </a>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 pt-16 pb-8">
         
         {/* Top Section - Logo & Catalog CTA */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 pb-8 border-b border-gray-200">
