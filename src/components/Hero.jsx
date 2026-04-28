@@ -123,11 +123,11 @@ const Hero = () => {
                   Fabricamos trailers personalizados para o seu tipo de negócio. Há mais de 10 anos fabricando Trailers e Motorhomes, que rodam pelas estradas do mundo inteiro!
                 </p>
                 
-                <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-ion-bronze hover:bg-white text-ion-dark font-bold py-2 px-6 rounded uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-xl text-center text-sm">
+                <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start w-full">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-[280px] sm:w-auto bg-ion-bronze hover:bg-white text-ion-dark font-bold py-2 px-2 sm:px-6 rounded uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-xl text-center text-[11px] sm:text-sm">
                     Solicitar Orçamento
                   </a>
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="border-2 border-ion-dark text-ion-dark hover:bg-ion-dark hover:text-white font-bold py-2 px-6 rounded uppercase tracking-wider transition-all duration-300 text-center text-sm">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-[280px] sm:w-auto border-2 border-ion-dark text-ion-dark hover:bg-ion-dark hover:text-white font-bold py-2 px-2 sm:px-6 rounded uppercase tracking-wider transition-all duration-300 text-center text-[11px] sm:text-sm">
                     Detalhes
                   </a>
                 </div>
@@ -136,7 +136,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image Content (Carousel) */}
-          <div className="relative aspect-video sm:h-[400px] md:h-[500px] w-full flex justify-center items-center z-20 mt-8 md:mt-0 px-2 sm:px-0">
+          <div className="relative aspect-video sm:h-[400px] md:h-[500px] w-[92%] sm:w-full mx-auto flex justify-center items-center z-20 mt-8 md:mt-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
