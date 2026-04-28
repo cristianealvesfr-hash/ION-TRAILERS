@@ -7,19 +7,28 @@ const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if user has already given consent
-    const consent = localStorage.getItem('ion_cookie_consent');
-    if (!consent) {
-      // Small delay so it doesn't pop up instantly on first paint
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 1000);
-      return () => clearTimeout(timer);
+    try {
+      // Check if user has already given consent
+      const consent = localStorage.getItem('ion_cookie_consent');
+      if (!consent) {
+        // Small delay so it doesn't pop up instantly on first paint
+        const timer = setTimeout(() => {
+          setIsVisible(true);
+        }, 1000);
+        return () => clearTimeout(timer);
+      }
+    } catch (error) {
+      // Fallback for browsers blocking localStorage (e.g., strict incognito)
+      setIsVisible(true);
     }
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('ion_cookie_consent', 'true');
+    try {
+      localStorage.setItem('ion_cookie_consent', 'true');
+    } catch (error) {
+      console.warn('LocalStorage is disabled');
+    }
     setIsVisible(false);
   };
 
@@ -27,6 +36,7 @@ const CookieConsent = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
+          key="cookie-banner"
           initial={{ y: 150, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 150, opacity: 0 }}
