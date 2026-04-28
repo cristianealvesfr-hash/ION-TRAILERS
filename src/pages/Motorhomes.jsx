@@ -19,7 +19,7 @@ const Motorhomes = () => {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl col-span-1 md:col-span-2 max-w-4xl mx-auto">
           <img 
-            src="/src/assets/images/motorhome_premium.jpg" 
+            src="/images/motorhome_premium.jpg" 
             alt="Motorhome Íon Trailer" 
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />

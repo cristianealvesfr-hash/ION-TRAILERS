@@ -8,7 +8,7 @@ const SocialProof = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/social_proof_bg.jpg" 
+          src="/images/social_proof_bg.jpg" 
           alt="Ion Trailers Landscape" 
           className="w-full h-full object-cover"
         />

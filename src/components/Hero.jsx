@@ -8,28 +8,28 @@ const slides = [
     title: "ÍON TRAILERS",
     subtitle: "2026",
     category: "Fábrica trailer de lanches",
-    image: "/src/assets/images/trailer_feira.jpg",
+    image: "/images/trailer_feira.jpg",
   },
   {
     id: 2,
     title: "ÍON TRAILERS",
     subtitle: "2026",
     category: "Trailers de Camping",
-    image: "/src/assets/images/trailer_camping_novo.jpg",
+    image: "/images/trailer_camping_novo.jpg",
   },
   {
     id: 3,
     title: "ÍON TRAILERS",
     subtitle: "2026",
     category: "Motorhomes",
-    image: "/src/assets/images/motorhome_premium.jpg",
+    image: "/images/motorhome_premium.jpg",
   },
   {
     id: 4,
     title: "ÍON TRAILERS",
     subtitle: "2026",
     category: "Reboques",
-    image: "/src/assets/images/reboque_teardrop.jpg",
+    image: "/images/reboque_teardrop.jpg",
   }
 ];
 
@@ -63,7 +63,7 @@ const Hero = () => {
         {/* Mobile Background Image (Factory) */}
         <div className="absolute inset-0 md:hidden bg-ion-gray">
           <img 
-            src="/src/assets/images/fabrica_trailers.jpg" 
+            src="/images/fabrica_trailers.jpg" 
             alt="Fábrica Íon Trailers" 
             className="w-full h-full object-cover opacity-[0.15] grayscale"
           />

@@ -14,7 +14,7 @@ const About = () => {
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-center">
             <img 
-              src="/src/assets/images/logo.jpg" 
+              src="/images/logo.jpg" 
               alt="Íon Trailers Logo" 
               className="max-w-xs md:max-w-sm rounded shadow-lg"
             />

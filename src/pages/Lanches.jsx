@@ -20,7 +20,7 @@ const Lanches = () => {
         {/* Foto 1 */}
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
           <img 
-            src="/src/assets/images/trailer_feira.jpg" 
+            src="/images/trailer_feira.jpg" 
             alt="Trailer de Lanches na Feira" 
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
@@ -29,7 +29,7 @@ const Lanches = () => {
         {/* Foto 2 */}
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
           <img 
-            src="/src/assets/images/trailer_vermelho.jpg" 
+            src="/images/trailer_vermelho.jpg" 
             alt="Interior Trailer Vermelho" 
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
