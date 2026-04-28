@@ -106,7 +106,7 @@ const Hero = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-ion-dark uppercase leading-tight tracking-tighter mt-4">
                   {slides[currentSlide].title}
                 </h1>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ion-bronze uppercase leading-none mt-1">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2">
                   {slides[currentSlide].subtitle}
                 </h2>
                 
@@ -114,7 +114,7 @@ const Hero = () => {
                   {slides[currentSlide].category}
                 </h3>
 
-                <p className="mt-4 text-gray-600 text-sm md:text-base max-w-lg leading-relaxed">
+                <p className="mt-4 text-gray-700 text-base md:text-lg max-w-lg leading-relaxed">
                   Fabricamos trailers personalizados para o seu tipo de negócio. Há mais de 10 anos fabricando Trailers e Motorhomes, que rodam pelas estradas do mundo inteiro!
                 </p>
                 
