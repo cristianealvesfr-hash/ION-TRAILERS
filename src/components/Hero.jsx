@@ -15,7 +15,7 @@ const slides = [
     title: "ÍON TRAILERS",
     subtitle: "2026",
     category: "Trailers de Camping",
-    image: "/images/trailer_camping_novo.jpg",
+    image: "/images/trailer_camping_1.jpg",
   },
   {
     id: 3,

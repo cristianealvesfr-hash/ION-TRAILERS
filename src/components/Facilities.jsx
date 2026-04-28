@@ -33,8 +33,15 @@ const Facilities = () => {
     "/images/trailer_loja_3.jpg"
   ];
 
+  const trailersCamping = [
+    "/images/trailer_camping_1.jpg",
+    "/images/trailer_camping_2.jpg",
+    "/images/trailer_camping_3.jpg"
+  ];
+
   const [currentFT, setCurrentFT] = React.useState(0);
   const [currentTL, setCurrentTL] = React.useState(0);
+  const [currentTC, setCurrentTC] = React.useState(0);
   
   React.useEffect(() => {
     const timerFT = setInterval(() => {
@@ -43,9 +50,13 @@ const Facilities = () => {
     const timerTL = setInterval(() => {
       setCurrentTL((prev) => (prev === trailerLojas.length - 1 ? 0 : prev + 1));
     }, 4500); // slightly different interval so they don't slide exactly at the same time
+    const timerTC = setInterval(() => {
+      setCurrentTC((prev) => (prev === trailersCamping.length - 1 ? 0 : prev + 1));
+    }, 5000);
     return () => {
       clearInterval(timerFT);
       clearInterval(timerTL);
+      clearInterval(timerTC);
     };
   }, []);
 
@@ -194,6 +205,52 @@ const Facilities = () => {
                   key={idx}
                   onClick={() => setCurrentTL(idx)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${currentTL === idx ? 'bg-ion-bronze w-8' : 'bg-white/50 hover:bg-white'}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Trailers de Camping Carousel Category */}
+        <div className="mt-24 border-t border-gray-100 pt-24 mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <motion.h3 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-black text-ion-dark mb-4"
+            >
+              Trailers de <span className="text-ion-bronze">Camping</span>
+            </motion.h3>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-gray-600 text-lg md:text-xl font-medium"
+            >
+              Conforto e autonomia em unidades compactas e robustas. Projetadas para levar você a qualquer destino com total comodidade.
+            </motion.p>
+          </div>
+
+          <div className="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl relative">
+            <motion.img 
+              key={`tc-${currentTC}`}
+              src={trailersCamping[currentTC]}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="w-full h-full object-cover"
+              alt="Trailer de Camping Íon Trailers"
+            />
+            
+            {/* Overlay indicators */}
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3 z-20">
+              {trailersCamping.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentTC(idx)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${currentTC === idx ? 'bg-ion-bronze w-8' : 'bg-white/50 hover:bg-white'}`}
                 />
               ))}
             </div>
