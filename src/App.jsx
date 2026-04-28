@@ -18,7 +18,7 @@ import PoliticaPrivacidade from './pages/PoliticaPrivacidade';
 function App() {
   return (
     <Router>
-      <div className="font-sans min-h-screen bg-white text-ion-dark selection:bg-ion-bronze selection:text-white">
+      <div className="font-sans min-h-screen bg-white text-ion-dark selection:bg-ion-bronze selection:text-white overflow-x-hidden relative w-full">
         <TopBar />
         <Header />
         <main>
