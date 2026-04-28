@@ -26,7 +26,7 @@ const TopBar = () => {
             Comercial (51) 98286-8640
           </a>
           <span className="font-semibold text-ion-bronze hidden lg:inline-block">
-            + DE 600 EQUIPAMENTOS VENDIDOS
+            + DE 10 MIL EQUIPAMENTOS VENDIDOS
           </span>
         </div>
       </div>

@@ -27,7 +27,7 @@ const SocialProof = () => {
             className="w-full lg:w-1/2 bg-white/95 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-2xl border-l-4 border-ion-bronze"
           >
             <h2 className="text-3xl md:text-5xl font-black text-ion-dark leading-tight">
-              Uma das <span className="text-ion-bronze">maiores Fábricas</span> de Trailers do Brasil com mais de <span className="text-ion-bronze underline decoration-4 underline-offset-4">600 entregues</span>
+              Uma das <span className="text-ion-bronze">maiores Fábricas</span> de Trailers do Brasil com mais de <span className="text-ion-bronze underline decoration-4 underline-offset-4">10 mil entregues</span>
             </h2>
             <p className="mt-6 text-gray-600 text-lg">
               Qualidade, conforto e segurança para você viver as melhores aventuras pelo mundo.
