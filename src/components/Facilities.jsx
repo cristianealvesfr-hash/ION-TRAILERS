@@ -13,12 +13,28 @@ const Facilities = () => {
       image: "/images/fabrica_trailers.jpg"
     },
     {
-      title: "Ampliação",
+      title: "Filial",
       highlight: "São Paulo",
-      address: "Filial | Itu-SP (Venda, Manutenção e Camping) Estr. Da Glória, 1.100 - Três Vendas",
-      image: "/images/trailer_feira.jpg"
+      address: "Venda, Manutenção e Camping | Estr. Da Glória, 1.100 - Três Vendas",
+      image: "/images/trailer_camping_novo.jpg"
     }
   ];
+
+  const foodTrucks = [
+    "/images/food_truck_red_1.jpg",
+    "/images/food_truck_red_2.jpg",
+    "/images/food_truck_red_3.jpg",
+    "/images/food_truck_red_4.jpg"
+  ];
+
+  const [currentFT, setCurrentFT] = React.useState(0);
+  
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentFT((prev) => (prev === foodTrucks.length - 1 ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="py-24 bg-white">
@@ -78,6 +94,53 @@ const Facilities = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Food Trucks Carousel Category */}
+        <div className="mt-32 border-t border-gray-100 pt-24">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <motion.h3 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-black text-ion-dark mb-4"
+            >
+              Trailers de Lanche / <span className="text-ion-bronze">Food Trucks</span>
+            </motion.h3>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-gray-600 text-lg md:text-xl font-medium"
+            >
+              Projetos premium personalizados, com acabamento impecável, focados em ergonomia e produtividade para o seu negócio gastronômico.
+            </motion.p>
+          </div>
+
+          <div className="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl relative">
+            <motion.img 
+              key={currentFT}
+              src={foodTrucks[currentFT]}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="w-full h-full object-cover"
+              alt="Food Truck Íon Trailers"
+            />
+            
+            {/* Overlay indicators */}
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3 z-20">
+              {foodTrucks.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentFT(idx)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${currentFT === idx ? 'bg-ion-bronze w-8' : 'bg-white/50 hover:bg-white'}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

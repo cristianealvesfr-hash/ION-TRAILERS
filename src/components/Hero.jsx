@@ -8,7 +8,7 @@ const slides = [
     title: "ÍON TRAILERS",
     subtitle: "2026",
     category: "Fábrica trailer de lanches",
-    image: "/images/trailer_feira.jpg",
+    image: "/images/food_truck_red_1.jpg",
   },
   {
     id: 2,

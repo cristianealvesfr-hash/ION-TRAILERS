@@ -17,20 +17,34 @@ const Lanches = () => {
       </p>
 
       <div className="grid md:grid-cols-2 gap-8">
-        {/* Foto 1 */}
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
           <img 
-            src="/images/trailer_feira.jpg" 
-            alt="Trailer de Lanches na Feira" 
+            src="/images/food_truck_red_1.jpg" 
+            alt="Food Truck Exterior" 
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
         </div>
         
-        {/* Foto 2 */}
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
           <img 
-            src="/images/trailer_vermelho.jpg" 
-            alt="Interior Trailer Vermelho" 
+            src="/images/food_truck_red_2.jpg" 
+            alt="Food Truck Exterior Aberto" 
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
+          <img 
+            src="/images/food_truck_red_3.jpg" 
+            alt="Food Truck Interior" 
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
+          <img 
+            src="/images/food_truck_red_4.jpg" 
+            alt="Food Truck Interior Bancada" 
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
         </div>
