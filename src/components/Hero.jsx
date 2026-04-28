@@ -103,8 +103,13 @@ const Hero = () => {
                 transition={{ duration: 0.5 }}
                 className="flex flex-col"
               >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-ion-dark uppercase leading-tight tracking-tighter mt-4">
-                  {slides[currentSlide].title}
+                <h1 className="flex flex-col mt-4">
+                  <span className="text-6xl md:text-7xl lg:text-8xl font-black text-ion-dark leading-none tracking-tighter">
+                    ÍON
+                  </span>
+                  <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-ion-dark/80 uppercase leading-none tracking-[0.2em] mt-1">
+                    TRAILERS
+                  </span>
                 </h1>
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-ion-bronze leading-snug mt-2">
                   {slides[currentSlide].subtitle}
